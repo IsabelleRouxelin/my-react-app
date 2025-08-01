@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
 
       {page === 'home' && <HomePage />}
       {page === 'about' && <AboutPage />}
-      {page === 'contact' && <ContactPage />}
+      {page === 'project' && <ProjectPage />}
 
     </Layout>
   );
