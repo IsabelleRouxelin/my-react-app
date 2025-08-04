@@ -37,7 +37,6 @@ const HomePage = ({onSetPage}) => {
         {/* Featured Projects */}
         <section className='projects-section'>
             <h2 className='section-title'>Featured Projects</h2>
-            <ProjectGallery projects={weeklyProjects.slice(0,3) showFilter={false}}/>
         </section>
     </>
   );
