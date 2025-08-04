@@ -18,7 +18,7 @@ const Header = ({ selectedPage, onSetPage}) => {
             <span className="logo-text">Portfolio</span>
           </div>
           
-          <nav className="desktop-nav">
+          <nav className="desktop-nav"> 
             {pages.map(page => (
               <button
                 key={page.key}
