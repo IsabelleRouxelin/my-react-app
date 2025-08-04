@@ -1,17 +1,18 @@
 import React from 'react';
 import {skills} from '../data/skills';
 import {weeklyProjects} from '../data/projects';
-
+import heroImage from "../assets/images/ir.jpeg";
 const HomePage = ({onSetPage}) => {
+    
   return (
     <>
        {/* Hero Section */}
        <section className='hero'>
             <div className='hero-content'>
                 <div className='image-container'>
-                    <img src="./images/ir.jpeg" alt="image" />
+                <img src={heroImage} alt="isabelle" />
                 </div>
-                <h1 className='hero-title'>Hello, I'm Isabelle </h2>
+                <h1 className='hero-title'>Hello, I'm Isabelle </h1>
                 <p className='hero-description'>A legal compliance specialist turned coding enthusiast and aspiring Full Stack Developer with a passion for solving problems creatively.</p>
                 <div>
                     <button onClick={() => onSetPage ("project")} 
@@ -34,13 +35,13 @@ const HomePage = ({onSetPage}) => {
             </div>
         </section>
         {/* Featured Projects */}
-        <section>
-
+        <section className='projects-section'>
+            <h2 className='section-title'>Featured Projects</h2>
+            <ProjectGallery projects={weeklyProjects.slice(0,3) showFilter={false}}/>
         </section>
     </>
   );
 };
-// need hero section 
-// skills section 
+
 //featured projects section
 export default HomePage;

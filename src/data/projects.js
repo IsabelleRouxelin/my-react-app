@@ -1,4 +1,4 @@
-// add projects here
+// add projects here - need to add images
 
 
 export const weeklyProjects = [
