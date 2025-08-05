@@ -1,4 +1,5 @@
 import React from 'react';
+import { skills } from '../data/skills';
 import '../styles/main.css';
 
 const AboutPage = () => {
@@ -14,15 +15,21 @@ const AboutPage = () => {
             
         </div>
       </section>
-      <section className="skillsSection">
+      <section className="skills-section">
         <h2>Skills & Technologies</h2>
+              <div className="skills-list">
+              {skills.map((skill, index) => (
+                    <div key={index} className="skill=item"> 
+                        {skill}
+                    </div>
+                ))}
+              </div>
       </section>
       <section className="featuredProjects">
         <h2>Featured Projects</h2>
         <button>View All Projects</button>
       </section>
     </>
-        
   );
 };
 
