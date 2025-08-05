@@ -1,18 +1,52 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --black: #0a0a0a;
+  --dark-gray: #1a1a1a;
+  --medium-gray: #2d2d2d;
+  --light-gray: #e0e0e0;
+  --white: #ffffff;
+  --fuchsia: #ff00a0;
+  --fuchsia-light: #ff66c4;
+  --fuchsia-dark: #cc0080;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--light-gray);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+/* Reusable components */
+
+/* Header */
+
+/* Hero*/
+
+/* Skills */
+
+/* Projects*/
+
+/* Project card */
+
+/* About */
+
+/* Footer */
+
+/* Responsive design  */
+
+
+
+
+
+
+
+/* original styling */
 a {
   font-weight: 500;
   color: #646cff;
