@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, X, Code } from 'lucide-react';
+import '../styles/main.css';
 
 const Header = ({ selectedPage, onSetPage}) => {
     const pages = [

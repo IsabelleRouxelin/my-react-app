@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import ProjectCard from "./ProjectCard";
+import '../styles/main.css';
 
 const ProjectGallery = ({projects, showFilter = true}) => {
     const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -13,23 +14,40 @@ const ProjectGallery = ({projects, showFilter = true}) => {
             setActiveFilter("all");
         } else {
             const filtered = projects.filter(project => 
-                project.tech.some()
+                project.tech.some(t => t.toLowerCase().includes(tech.toLowerCase()))
             );
+            setFilteredProjects(filtered);
+            setActiveFilter(tech);
         }
     };
-    return (
-        <div className="project-gallery">
-            {/*filter button */}
-            <div>
-                <button></button>
-            </div>
-            {/*grid for project */}
-            <div className="projects-grid">
 
-            </div>
-            {/*error message  */}
+     return (
+    <div className="project-gallery">
+      {showFilter && (
+        <div className="projects-filter">
+          {filterOptions.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => filterProjects(filter)}
+              className={`filter-button ${activeFilter === filter ? 'active' : ''}`}
+            >
+              {filter === 'all' ? 'All Projects' : filter}
+            </button>
+          ))}
         </div>
-    );
+      )}
+
+      <div className="projects-grid">
+        {filteredProjects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+      
+      {filteredProjects.length === 0 && (
+        <p className="no-projects">No projects found with this filter.</p>
+      )}
+    </div>
+  );
 };
 
 export default ProjectGallery;

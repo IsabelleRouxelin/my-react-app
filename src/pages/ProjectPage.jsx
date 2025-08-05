@@ -1,11 +1,19 @@
 import React from 'react';
+import ProjectGallery from '../components/ProjectGallery';
+import { weeklyProjects } from '../data/projects';
+import '../styles/main.css';
 
 const ProjectPage = () => {
   return (
-    <div>
-      <h2>Welcome to the Project Page</h2>
-      <p>This is the main content of the Project page.</p>
+    <section className="section projects" id="projects">
+    <div className="container">
+      <h2 className="section-title">All Projects</h2>
+      <p className="section-subtitle">
+        Explore my collection of projects showcasing various technologies and skills.
+      </p>
+      <ProjectGallery projects={weeklyProjects} showFilter={true} />
     </div>
+  </section>
   );
 };
 

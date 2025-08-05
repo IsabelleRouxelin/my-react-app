@@ -1,12 +1,13 @@
 import React from 'react';
+import '../styles/main.css';
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <>
-      <section className="hero">
-      <div>
-        <h1>Hello, I'm Isabelle</h1>
-        <p>A legal compliance specialist turned coding enthusiast and aspiring Full Stack Developer with a passion for solving problems creatively.</p>
+      <section className="about-section" id="about">
+      <div className='container'>
+        <h1 className='section-title'>Hello, I'm Isabelle</h1>
+        <p className='about-text'>A legal compliance specialist turned coding enthusiast and aspiring Full Stack Developer with a passion for solving problems creatively.</p>
         </div>
         <div>
             <button>View my work</button>
@@ -25,4 +26,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default AboutPage;
