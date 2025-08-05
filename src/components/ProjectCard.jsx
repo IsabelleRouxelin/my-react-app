@@ -1,5 +1,6 @@
 import React from "react";
-import { ExternalLink } from 'lucide-react';
+import '../styles/main.css';
+
 const ProjectCard = (props) => {
     const project = props.project;
 
@@ -10,22 +11,24 @@ const ProjectCard = (props) => {
             </div>
             <div className="project-content">
                 <div className="project-header">
-                    <h3 className="project-title">{project.title}</h3>
+                <h3 className="project-title">{project.title}</h3>
+                <span>Overview</span>
                 </div>
                 <p className="project-description">{project.description}</p>
             </div>
-            <div className="project-tech-container">
+            <div className="project-tech">
                 {project.tech.map((tech, index) => (
-                    <span key={index} className="project-tech">
+                    <span key={index} className="tech-item">
                     {tech}
                     </span>
                 ))}
             </div>
             <div className="project-links">
-                <a href={project.github} className="project-link"></a>
+                <a href={project.github} className="project-link">
+                    <span>Code</span>
+                </a>
                 <a href={project.live} className="project-link">
-                    <ExternalLink size={14} />
-                    Live Demo
+                    <span>Live Demo</span>
                 </a>
             </div>
         </div>
