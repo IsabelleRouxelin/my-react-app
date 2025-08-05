@@ -59,7 +59,7 @@ export const weeklyProjects = [
         description: "A personal portfolio website showcasing about me, projects, and contact information." ,
         tech: ["HTML", "CSS", "JavaScript", "React"],
         image: "images/",// have to add once completed
-        github: "https://github.com/IsabelleRouxelin/my-react-app" 
+        github: "https://github.com/IsabelleRouxelin/my-react-app",
         live: "#"
     }
 ]
