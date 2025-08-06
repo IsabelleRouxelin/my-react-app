@@ -13,7 +13,6 @@ const Header = ({ selectedPage, onSetPage }) => {
       <div className="header-container">
         <div className="logo-container">
           <div className="logo-icon">
-            {/* could consider switching below for img logo */}
             &lt;/&gt;
           </div>
           <span className="logo-text">Isabelle Rouxelin - Portfolio</span>
