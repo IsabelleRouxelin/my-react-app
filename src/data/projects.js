@@ -58,8 +58,8 @@ export const weeklyProjects = [
         title: "Portfolio Site",
         description: "A personal portfolio website showcasing about me, projects, and contact information." ,
         tech: ["HTML", "CSS", "JavaScript", "React"],
-        image: "/images/",// have to add once completed
+        image: "/reactportfolio.png",
         github: "https://github.com/IsabelleRouxelin/my-react-app",
-        live: "#"
+        live: "#"// need to add render link once deployed
     }
 ]
