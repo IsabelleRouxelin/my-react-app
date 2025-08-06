@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/main.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import ContactForm from './ContactForm';
 
 const Footer = () => {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <footer className='footer' id="contact">
         <div className='container'>
@@ -22,11 +25,17 @@ const Footer = () => {
               >
                 <FaGithub className="social-icon"/>
               </a>
-              <a href="mailto:isabelle.rouxelin@gmail.com" className="social-link">Mail</a>
             </div>
             <h2 className='footer-title'>Let's Connect</h2>
             <p className='footer-'>I'm always open to discussing new opportunities & interesting projects.</p>
+            <button 
+              onClick={() => setShowForm(!showForm)} 
+              className="btn"
+            >
+              {showForm ? 'Hide Contact Form' : 'Open Contact Form'}
+            </button>
           </div>
+          {showForm && <ContactForm />}
           <div className='copyright'>
             &copy; {new Date().getFullYear()} Isabelle Rouxelin. All rights reserved.
           </div>

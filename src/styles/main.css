@@ -31,9 +31,6 @@ body {
   padding: 0 20px;
 }
 
-.section {
-  padding: 80px 0;
-}
 
 .section-title {
   font-size: 2.5rem;
@@ -126,12 +123,7 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
+
 
 .logo-img {
   width: 40px;
@@ -514,6 +506,53 @@ body {
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--light-gray);
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--light-gray);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--medium-gray);
+  border: 1px solid var(--fuchsia-dark);
+  border-radius: 5px;
+  color: var(--light-gray);
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-success {
+  color: #4BB543;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-error {
+  color: #FF3333;
+  margin-top: 15px;
+  text-align: center;
 }
 
 /* Responsive design  */
