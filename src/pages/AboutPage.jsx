@@ -25,10 +25,6 @@ const AboutPage = () => {
                 ))}
               </div>
       </section>
-      <section className="featuredProjects">
-        <h2>Featured Projects</h2>
-        <button>View All Projects</button>
-      </section>
     </>
   );
 };
