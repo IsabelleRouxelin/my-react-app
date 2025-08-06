@@ -33,7 +33,7 @@ export const weeklyProjects = [
         tech: ["HTML", "CSS", "JavaScript"],
         image: "/images/todolist.png",
         github: "https://github.com/IsabelleRouxelin/Todo-List",
-        live: "isabellerouxelin.github.io/Todo-List/"
+        live: "https://npm runisabellerouxelin.github.io/Todo-List/"
     },
     {
         id: 5,

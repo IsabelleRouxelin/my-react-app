@@ -19,7 +19,7 @@ const AboutPage = () => {
         <h2>Skills & Technologies</h2>
               <div className="skills-list">
               {skills.map((skill, index) => (
-                    <div key={index} className="skill=item"> 
+                    <div key={index} className="skill-item"> 
                         {skill}
                     </div>
                 ))}
