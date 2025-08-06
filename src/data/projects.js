@@ -60,6 +60,6 @@ export const weeklyProjects = [
         tech: ["HTML", "CSS", "JavaScript", "React"],
         image: "/reactportfolio.png",
         github: "https://github.com/IsabelleRouxelin/my-react-app",
-        live: "https://portfolio-ir.onrender.com"
+        live: "https://isabelle-r.onrender.com"
     }
 ]
