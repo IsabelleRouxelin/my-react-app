@@ -13,7 +13,7 @@ A modern, responsive portfolio website built with React and Vite to showcase dev
 ## Technologies Used
 - React
 - CSS
-- rENDER
+- Render
 
 ## Installation 
 - clone repository - git clone
