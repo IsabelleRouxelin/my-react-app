@@ -28,7 +28,7 @@ const HomePage = () => {
             <h2 className='section-title'>Skills & Technologies</h2>
             <div className='skill-container'>
                 {skills.map((skill, index) => (
-                    <div key={index} className="skill=item"> 
+                    <div key={index} className="skill-item"> 
                         {skill}
                     </div>
                 ))}
@@ -39,7 +39,7 @@ const HomePage = () => {
         <section className='projects-section'>
             <h2 className='section-title'>Featured Projects</h2>
             <ProjectGallery 
-            projects={weeklyProjects.slice(0, 3)} 
+            projects={weeklyProjects.slice(0,4)} 
             showFilter={false} 
           />
         </section>
