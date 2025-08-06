@@ -10,6 +10,9 @@ const AboutPage = () => {
         <p className='about-text'>
           A legal compliance specialist turned coding enthusiast and aspiring Full Stack Developer 
           with a passion for solving problems creatively.
+          <br />
+          Whether I'm untangling complex workflows or yarn for my latest crochet project, I thrive on turning chaos into order. 
+          I am excited to apply my analytical mindset and passion for learning to new coding challenges.
         </p>
       </section>
       <section className="skills-section">
