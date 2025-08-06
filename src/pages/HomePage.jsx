@@ -39,7 +39,7 @@ const HomePage = () => {
         <section className='projects-section'>
             <h2 className='section-title'>Featured Projects</h2>
             <ProjectGallery 
-            projects={weeklyProjects.slice(0,4)} 
+            projects={weeklyProjects.slice(2,6)} 
             showFilter={false} 
           />
         </section>
