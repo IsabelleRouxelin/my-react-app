@@ -15,7 +15,7 @@ const Header = ({ selectedPage, onSetPage }) => {
           <div className="logo-icon">
             &lt;/&gt;
           </div>
-          <span className="logo-text">Isabelle Rouxelin - Portfolio</span>
+          <span className="logo-text">Isabelle R. Portfolio</span>
         </div>
         <nav className="desktop-nav">
           {pages.map(page => (
